@@ -19,7 +19,7 @@
       state: latest
 
   - name: Configure bridge network
-    nmcli:
+    community.general.nmcli:
       type: bridge
       conn_name: br0
       state: present
